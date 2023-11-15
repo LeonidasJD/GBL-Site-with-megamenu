@@ -36,6 +36,7 @@ class Megamenu {
     });
 
     $("#menu-item-21723").mousedown(function () {
+      //ukoliko ne radi funkcija na onClick mozemo da koristimo mousedown
       $(".firstSubmenu").removeClass("beVisible");
     });
     //OTVARANJE I ZATVARANJE BRAND MENIJA
