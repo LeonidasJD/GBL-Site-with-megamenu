@@ -21,9 +21,9 @@ class Megamenu {
     }); // NA SCROLL MISA SE SPUSTA I PODIZE HEDER
 
     function zatvoriSveMegamenije() {
-      $(".sub-menu-1").removeClass("beVisible");
-      $(".sub-menu-1").removeClass("firstSubmenu");
-      $(".sub-menu-1").removeClass("secondSubmenu");
+      $(".sub-menu-1").removeClass("beVisible"); //OVA FUNKCIJA SLUZI DA ZATVORI SVE MEGA MENIJE KOJI SU OTVORENI PRE NEGO OTVORO SLEDECI
+      $(".sub-menu-1").removeClass("firstSubmenu"); //I TIME MOZEMO DA KLIKCEMO PO SVIM STAVKAMA MENIJA A ON CE PRVO ZATVORITI OTVORENI MEGAMENI
+      $(".sub-menu-1").removeClass("secondSubmenu"); //PA ONDA OTVORITI SLEDECI I TAKO IZBEGAVAMO DA U ISTO VREME IMAMO OTVORENE VISE MEGA MENIJA
       $(".sub-menu-1").removeClass("thirdSubmenu");
       $(".sub-menu-1").removeClass("fourthSubmenu");
     }
@@ -32,7 +32,11 @@ class Megamenu {
       zatvoriSveMegamenije();
       var subMenu = $(this).find(".sub-menu-1"); //PRONALAZI ELEMENT SA KLASOM sub-menu-1 koji je iskljucivo unutar elementa menu-item-21374
       subMenu.addClass("beVisible");
-      subMenu.addClass("firstSubmenu");
+      subMenu.addClass(
+        "firstSubmenu"
+      ); /* SVAKOM ELEMENTU DODAJEMO JOS JEDNU KLASU KAKO BI MOGLI DA SE UHVATIMO ZA TU KLASU DA BI
+      KLIKOM NA X (IKS) DUGME ZATVORILI TAJ MEGAMENI 
+      */
     });
 
     $("#menu-item-21723").mousedown(function () {
@@ -75,7 +79,7 @@ class Megamenu {
     }); //OTVARANJE ZATVARANJE TEAM MENIJA
 
     $(window).on("scroll", function () {
-      $(".firstSubmenu").removeClass("beVisible");
+      $(".firstSubmenu").removeClass("beVisible"); //NA SKROL BRISEMO SVAKOM MEGAMENIJU KLASU beVisible KAKO BI ZATVORILI MEGA MENI NA SKROL
       $(".secondSubmenu").removeClass("beVisible");
       $(".thirdSubmenu").removeClass("beVisible");
       $(".fourthSubmenu").removeClass("beVisible");
