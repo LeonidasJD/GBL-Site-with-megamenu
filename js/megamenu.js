@@ -30,7 +30,7 @@ class Megamenu {
 
     $("#menu-item-21374").on("click", function () {
       zatvoriSveMegamenije();
-      var subMenu = $(this).find(".sub-menu-1");
+      var subMenu = $(this).find(".sub-menu-1"); //PRONALAZI ELEMENT SA KLASOM sub-menu-1 koji je iskljucivo unutar elementa menu-item-21374
       subMenu.addClass("beVisible");
       subMenu.addClass("firstSubmenu");
     });
