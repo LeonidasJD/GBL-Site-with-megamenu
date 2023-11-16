@@ -34,12 +34,19 @@
 
 .languageUl li,
 .menuItems li {
-  padding-left: 60px;
   color: white;
   font-size: 14px;
   font-family: "Work Sans", Sans-serif;
   padding-bottom: 25px;
   padding-top: 25px;
+}
+#menu-item-21374,
+#menu-item-21375,
+#menu-item-21376,
+#menu-item-21377,
+#menu-item-wpml-ls-119-de,
+#menu-item-wpml-ls-119-en {
+  padding-left: 60px;
 }
 .menu li a,
 .menuItems li a {
@@ -124,11 +131,14 @@
   padding-bottom: 25px;
 }
 .sub-menu-1 {
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
   visibility: hidden;
   opacity: 1;
   transition: visibility 0s, opacity 0.5s linear;
 }
-#menu-item-21378 {
+/*#menu-item-21378 {
   margin-left: -129px;
 }
 #menu-item-21427 {
@@ -139,7 +149,7 @@
 }
 #menu-item-21615 {
   margin-left: -102px;
-}
+}*/
 .beVisible {
   visibility: visible;
 }
@@ -260,4 +270,16 @@
 }
 .sub-menu-3 li::marker {
   color: #ffffff5e !important;
+}
+
+@media screen and (width < 1024px) {
+  .fullSizeContainer {
+    display: none;
+  }
+}
+
+@media screen and (width > 1023px) {
+  .mobileMenu {
+    display: none;
+  }
 }

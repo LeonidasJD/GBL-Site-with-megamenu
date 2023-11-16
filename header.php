@@ -32,30 +32,35 @@ $skip_link_url = apply_filters('hello_elementor_skip_link_url', '#content');
 
     <?php wp_body_open(); ?>
 
-    <div class="fullSizeContainer">
-        <div class="Mycontainer">
-            <div class="headerWrapper">
-                <div class="logoImg"><a href="<?php echo site_url() ?>"><img
-                            src="/wp-content/uploads/2023/02/Vector-e1685534279823.png" alt=""></a></div>
-                <nav class="main-navigation">
-                    <?php
-                    wp_nav_menu(
-                        array(
-                            'theme_location' => 'custom_megamenu',
-                            'menu_class' => 'menuItems',
-                            'link_after' => '<i class="fa-solid fa-angle-left fa-rotate-270 myicon"></i>',
-                            'walker' => new Custom_Walker_Nav_Menu(),
+    <div class="myMenus">
+        <div class="fullSizeContainer">
+            <div class="Mycontainer container">
+                <div class="headerWrapper">
+                    <div class="logoImg"><a href="<?php echo site_url() ?>"><img
+                                src="/wp-content/uploads/2023/02/Vector-e1685534279823.png" alt=""></a></div>
+                    <nav class="main-navigation">
+                        <?php
+                        wp_nav_menu(
+                            array(
+                                'theme_location' => 'custom_megamenu',
+                                'menu_class' => 'menuItems',
+                                'link_after' => '<i class="fa-solid fa-angle-left fa-rotate-270 myicon"></i>',
+                                'walker' => new Custom_Walker_Nav_Menu(),
 
 
-                        )
-                    );
-                    ?>
+                            )
+                        );
+                        ?>
 
-                </nav>
+                    </nav>
 
-                <div class="contactUs"><a href="">CONTACT US</a></div>
+                    <div class="contactUs"><a href="">CONTACT US</a></div>
+                </div>
+
             </div>
 
         </div>
+        <div class="mobileMenu">
 
+        </div>
     </div>
