@@ -26,6 +26,7 @@ function hello_elementor_child_enqueue_scripts()
 	wp_enqueue_style('megamenu-css', get_theme_file_uri('/css/megamenu.css'));
 	wp_enqueue_style('megamenu-css-de', get_theme_file_uri('/css/megamenu-de.css'));
 	wp_enqueue_script('megamenu-js', get_theme_file_uri('/js/megamenu.js'), array('jquery'), '1.0', true);
+	wp_enqueue_script('megamenu-de-js', get_theme_file_uri('/js/megamenuDe.js'), array('jquery'), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'hello_elementor_child_enqueue_scripts', 20);
 
