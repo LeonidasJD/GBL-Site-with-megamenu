@@ -40,10 +40,10 @@
   padding-bottom: 25px;
   padding-top: 25px;
 }
-#menu-item-21374,
-#menu-item-21375,
-#menu-item-21376,
-#menu-item-21377,
+#menu-item-21680,
+#menu-item-21756,
+#menu-item-21832,
+#menu-item-21908,
 #menu-item-wpml-ls-119-de,
 #menu-item-wpml-ls-119-en {
   padding-left: 60px;
@@ -78,10 +78,10 @@
 .menu-item-wpml-ls-119-en i {
   display: none;
 }
-#menu-item-21374 #menu-item-21723 a,
-#menu-item-21375 #menu-item-21725 a,
-#menu-item-21376 #menu-item-21724 a,
-#menu-item-21377 #menu-item-21722 a {
+#menu-item-21680 #menu-item-21755 a,
+#menu-item-21756 #menu-item-21831 a,
+#menu-item-21832 #menu-item-21907 a,
+#menu-item-21908 #menu-item-21983 a {
   color: #2ae048 !important;
   border: solid;
   padding-left: 10px;
@@ -90,10 +90,10 @@
   padding-bottom: 5px;
   border-radius: 50%;
 }
-#menu-item-21374 #menu-item-21723 a:hover,
-#menu-item-21375 #menu-item-21725 a:hover,
-#menu-item-21376 #menu-item-21724 a:hover,
-#menu-item-21377 #menu-item-21722 a:hover {
+#menu-item-21680 #menu-item-21755 a:hover,
+#menu-item-21756 #menu-item-21831 a:hover,
+#menu-item-21832 #menu-item-21907 a:hover,
+#menu-item-21908 #menu-item-21983 a:hover {
   color: red !important;
 }
 
@@ -169,12 +169,12 @@
 /*#menu-item-21374:hover #menu-item-21378 a {
   color: white !important;
 }*/
-#menu-item-21374 #menu-item-21378 a {
+#menu-item-21680 #menu-item-21681 a {
   color: white !important;
 }
-#menu-item-21374 #menu-item-21378 #menu-item-21383 a:hover,
-#menu-item-21374 #menu-item-21378 #menu-item-21387 a:hover,
-#menu-item-21374 #menu-item-21378 #menu-item-21392 a:hover {
+#menu-item-21680 #menu-item-21681 #menu-item-21682 a:hover,
+#menu-item-21680 #menu-item-21681 #menu-item-21686 a:hover,
+#menu-item-21680 #menu-item-21681 #menu-item-21692 a:hover {
   color: #2ae048 !important;
 }
 /*---------------------------------*/
@@ -186,12 +186,12 @@
 /*#menu-item-21375:hover #menu-item-21455 a {
   color: white !important;
 }*/
-#menu-item-21375 #menu-item-21455 a {
+#menu-item-21756 #menu-item-21785 a {
   color: white !important;
 }
-#menu-item-21375 #menu-item-21455 #menu-item-21486 a:hover,
-#menu-item-21375 #menu-item-21455 #menu-item-21490 a:hover,
-#menu-item-21375 #menu-item-21455 #menu-item-21500 a:hover {
+#menu-item-21756 #menu-item-21785 #menu-item-21786 a:hover,
+#menu-item-21756 #menu-item-21785 #menu-item-21790 a:hover,
+#menu-item-21756 #menu-item-21785 #menu-item-21800 a:hover {
   color: #2ae048 !important;
 }
 
@@ -204,17 +204,17 @@
 /*#menu-item-21376:hover #menu-item-21576 a {
   color: white !important;
 }*/
-#menu-item-21376 #menu-item-21576 a {
+#menu-item-21832 #menu-item-21879 a {
   color: white !important;
 }
-#menu-item-21376 #menu-item-21576 #menu-item-21577 a:hover,
-#menu-item-21376 #menu-item-21576 #menu-item-21580 a:hover,
-#menu-item-21376 #menu-item-21576 #menu-item-21586 a:hover,
-#menu-item-21376 #menu-item-21576 #menu-item-21590 a:hover,
-#menu-item-21376 #menu-item-21576 #menu-item-21593 a:hover,
-#menu-item-21376 #menu-item-21576 #menu-item-21594 a:hover,
-#menu-item-21376 #menu-item-21576 #menu-item-21595 a:hover,
-#menu-item-21376 #menu-item-21576 #menu-item-21596 a:hover {
+#menu-item-21832 #menu-item-21879 #menu-item-21880 a:hover,
+#menu-item-21832 #menu-item-21879 #menu-item-21883 a:hover,
+#menu-item-21832 #menu-item-21879 #menu-item-21889 a:hover,
+#menu-item-21832 #menu-item-21879 #menu-item-21893 a:hover,
+#menu-item-21832 #menu-item-21879 #menu-item-21896 a:hover,
+#menu-item-21832 #menu-item-21879 #menu-item-21897 a:hover,
+#menu-item-21832 #menu-item-21879 #menu-item-21898 a:hover,
+#menu-item-21832 #menu-item-21879 #menu-item-21899 a:hover {
   color: #2ae048 !important;
 }
 
@@ -227,12 +227,12 @@
 /*#menu-item-21377:hover #menu-item-21715 a {
   color: white !important;
 }*/
-#menu-item-21377 #menu-item-21715 a {
+#menu-item-21908 #menu-item-21976 a {
   color: white !important;
 }
-#menu-item-21377 #menu-item-21715 #menu-item-21716 a:hover,
-#menu-item-21377 #menu-item-21715 #menu-item-21718 a:hover,
-#menu-item-21377 #menu-item-21715 #menu-item-21720 a:hover {
+#menu-item-21908 #menu-item-21976 #menu-item-21977 a:hover,
+#menu-item-21908 #menu-item-21976 #menu-item-21979 a:hover,
+#menu-item-21908 #menu-item-21976 #menu-item-21981 a:hover {
   color: #2ae048 !important;
 }
 /*---------------------------------*/
@@ -282,4 +282,104 @@
   .mobileMenu {
     display: none;
   }
+}
+
+/*MOBILE MENU CSS*/
+
+.mobileMenuContainer {
+  background-color: #151616eb;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-style: solid;
+  border-width: 0px 0px 0.5px 0px;
+  border-color: #2adf85;
+  transition: top 0.7s ease;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.logoMobile {
+  width: 55%;
+}
+
+.mobileHeaderWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburgerMenu {
+  background-color: #2ae048;
+}
+.hiddenMobileMenuItems {
+  left: -600px !important;
+  transition: left 0.5s ease;
+}
+.visibleMobileMenuItems {
+  left: 0 !important;
+  transition: left 0.5s ease;
+}
+.menu-custom_megamenu_mobile-container {
+  position: absolute;
+  left: -600px;
+  top: 0 !important;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  list-style-type: none;
+  padding: 20px;
+}
+#menu-custom_megamenu_mobile {
+  display: block;
+  list-style-type: none;
+  padding: 0px;
+}
+#menu-custom_megamenu_mobile li:first-child {
+  text-align: end;
+}
+#menu-custom_megamenu_mobile li a {
+  font-family: "Work Sans", sans-serif !important;
+  font-size: 14px !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  color: black !important;
+  font-weight: 500 !important;
+  display: flex;
+  justify-content: space-between;
+}
+#menu-custom_megamenu_mobile li {
+  padding: 10px 0px 10px 0px !important;
+}
+#menu-custom_megamenu_mobile i {
+  margin-left: 20px !important;
+  font-size: 12px !important;
+  border: solid 1px black !important;
+  border-radius: 30px !important;
+  padding: 4px 15px !important;
+}
+.hamburgerMenu {
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 7px;
+}
+#menu-custom_megamenu_mobile #menu-item-21992 {
+  /*X BUTTON*/
+  text-align: center !important;
+  background-color: #2ae048 !important;
+  width: 13% !important;
+  padding: 5px 5px 5px 18px !important;
+  border-radius: 3px !important;
+  color: white;
+}
+#menu-item-21992 i {
+  /*X BUTTON icon*/
+  display: none;
+}
+.closeWrapper {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 20px;
 }

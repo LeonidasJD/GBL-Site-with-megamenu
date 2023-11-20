@@ -4,7 +4,6 @@ class MegamenuDe {
   }
 
   events() {
-    alert("hello");
     var header = $(".fullSizeContainer");
     let lastScrollPosition = 0;
 

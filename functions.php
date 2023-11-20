@@ -39,6 +39,14 @@ function customMegamenu()
 
 add_action('after_setup_theme', 'customMegamenu');
 
+function customMegamenuMobile()
+{
+	register_nav_menu('custom_megamenu_mobile', 'Custom Megamenu Mobile');
+	add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'customMegamenuMobile');
+
 class Custom_Walker_Nav_Menu extends Walker_Nav_Menu
 {
 	function start_lvl(&$output, $depth = 0, $args = null)
@@ -51,3 +59,9 @@ class Custom_Walker_Nav_Menu extends Walker_Nav_Menu
 		$output .= "\n$indent<ul class=\"sub-menu sub-menu-$display_depth\">\n";
 	}
 }
+
+function custom_enqueue_child_theme_style()
+{
+	wp_enqueue_style('parent-theme-css', get_template_directory_uri() . 'https://cdn.wpml.org/style.css');
+}
+add_action('wp_enqueue_scripts', 'custom_enqueue_child_theme_style');

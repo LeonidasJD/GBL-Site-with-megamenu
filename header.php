@@ -58,9 +58,32 @@ $skip_link_url = apply_filters('hello_elementor_skip_link_url', '#content');
                 </div>
 
             </div>
-
+            <!--MOBILE MENU ISPOD-->
         </div>
         <div class="mobileMenu">
+            <div class="mobileMenuContainer">
+                <div class="mobileHeaderWrapper">
+                    <div class="logoMobile"><img src="/wp-content/uploads/2023/02/Vector-e1685534279823.png"
+                            alt="logo image"></div>
 
+                    <nav class="mobile-menu">
+                        <div class="hamburgerMenu"><i class="fa-solid fa-bars" style="color:#ffffff"></i></div>
+
+                        <?php
+                        wp_nav_menu(
+                            array(
+                                'theme_location' => 'custom_megamenu_mobile',
+                                'menu_class' => 'mobileMenuItems',
+                                'link_after' => '<i class="fa-solid fa-angle-down"
+                                style="color: #000000; margin-left: 20px; font-size:12px;"></i>',
+                                'walker' => new Custom_Walker_Nav_Menu(),
+
+
+                            )
+                        );
+                        ?>
+                    </nav>
+                </div>
+            </div>
         </div>
     </div>
