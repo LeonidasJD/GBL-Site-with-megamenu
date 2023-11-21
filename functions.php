@@ -60,6 +60,18 @@ class Custom_Walker_Nav_Menu extends Walker_Nav_Menu
 	}
 }
 
+class Custom_Mobile_Walker_Nav_Menu extends Walker_Nav_Menu
+{
+	function start_lvl(&$output, $depth = 0, $args = null)
+	{
+		$indent = ($depth > 0 ? str_repeat("\t", $depth) : ''); // code indent
+		$display_depth = ($depth + 1); // because it counts the first submenu as 0
+
+		// Add custom class to the submenu ul element for mobile.
+		$output .= "\n$indent<ul class=\"mobile-sub-menu mobile-sub-menu-$display_depth\">\n";
+	}
+}
+
 function custom_enqueue_child_theme_style()
 {
 	wp_enqueue_style('parent-theme-css', get_template_directory_uri() . 'https://cdn.wpml.org/style.css');

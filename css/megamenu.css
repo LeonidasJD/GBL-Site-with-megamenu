@@ -315,7 +315,7 @@
   background-color: #2ae048;
 }
 .hiddenMobileMenuItems {
-  left: -600px !important;
+  left: -1600px !important;
   transition: left 0.5s ease;
 }
 .visibleMobileMenuItems {
@@ -324,7 +324,7 @@
 }
 .menu-custom_megamenu_mobile-container {
   position: absolute;
-  left: -600px;
+  left: -1600px;
   top: 0 !important;
   background-color: white;
   width: 100%;
@@ -370,16 +370,42 @@
   text-align: center !important;
   background-color: #2ae048 !important;
   width: 13% !important;
-  padding: 5px 5px 5px 18px !important;
+  padding: 5px 5px 5px 5px !important;
   border-radius: 3px !important;
   color: white;
 }
-#menu-item-21992 i {
+#menu-item-21992 i,
+#menu-item-22329 i {
   /*X BUTTON icon*/
   display: none;
 }
+.menu-item-21992 a {
+  /*x button link*/
+  display: block !important;
+}
+
+#menu-custom_megamenu_mobile #menu-item-wpml-ls-120-de i,
+#menu-custom_megamenu_mobile #menu-item-wpml-ls-120-en i {
+  /*SAKRIVANJE IKONICE ZA LINKOVE ZA JEZIK*/
+  display: none;
+}
+
 .closeWrapper {
   display: flex;
   justify-content: end;
   padding-bottom: 20px;
+}
+.mobile-sub-menu-1 {
+  list-style-type: none;
+  padding-left: 15px;
+  background-color: #f4f4f4;
+  padding: 15px 15px 15px 15px;
+  margin-top: 15px;
+  display: none;
+}
+.mobile-sub-menu-1 li a i {
+  display: none;
+}
+.mobile-sub-menu:not(:first-of-type) {
+  display: none;
 }

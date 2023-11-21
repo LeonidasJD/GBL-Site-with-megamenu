@@ -102,6 +102,16 @@ class Megamenu {
         "hiddenMobileMenuItems"
       );
     });
+
+    /**LOGIKA ZA OTVARANJE I ZATVARANJE PODMENIJA ZA TELEFON */
+    $(
+      ".menu-custom_megamenu_mobile-container .menu-item-has-children > a"
+    ).click(function (e) {
+      e.preventDefault();
+      var submenu = $(this).next(".mobile-sub-menu");
+      $(".mobile-sub-menu").not(submenu).slideUp("fast");
+      submenu.slideToggle("fast");
+    });
   }
 }
 

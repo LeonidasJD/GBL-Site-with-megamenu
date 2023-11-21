@@ -63,8 +63,8 @@ $skip_link_url = apply_filters('hello_elementor_skip_link_url', '#content');
         <div class="mobileMenu">
             <div class="mobileMenuContainer">
                 <div class="mobileHeaderWrapper">
-                    <div class="logoMobile"><img src="/wp-content/uploads/2023/02/Vector-e1685534279823.png"
-                            alt="logo image"></div>
+                    <div class="logoMobile"><a href="<?php echo (site_url()) ?>"><img
+                                src="/wp-content/uploads/2023/02/Vector-e1685534279823.png" alt="logo image"></a></div>
 
                     <nav class="mobile-menu">
                         <div class="hamburgerMenu"><i class="fa-solid fa-bars" style="color:#ffffff"></i></div>
@@ -76,7 +76,7 @@ $skip_link_url = apply_filters('hello_elementor_skip_link_url', '#content');
                                 'menu_class' => 'mobileMenuItems',
                                 'link_after' => '<i class="fa-solid fa-angle-down"
                                 style="color: #000000; margin-left: 20px; font-size:12px;"></i>',
-                                'walker' => new Custom_Walker_Nav_Menu(),
+                                'walker' => new Custom_Mobile_Walker_Nav_Menu,
 
 
                             )

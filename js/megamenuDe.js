@@ -28,7 +28,7 @@ class MegamenuDe {
       $(".sub-menu-1").removeClass("fourthSubmenu");
     }
 
-    $("#menu-item-22241").on("click", function () {
+    $("#menu-item-22007").on("click", function () {
       zatvoriSveMegamenije();
       var subMenu = $(this).find(".sub-menu-1"); //PRONALAZI ELEMENT SA KLASOM sub-menu-1 koji je iskljucivo unutar elementa menu-item-21374
       subMenu.addClass("beVisible");
@@ -39,42 +39,42 @@ class MegamenuDe {
         */
     });
 
-    $("#menu-item-21723").mousedown(function () {
+    $("#menu-item-22082").mousedown(function () {
       //ukoliko ne radi funkcija na onClick mozemo da koristimo mousedown
       $(".firstSubmenu").removeClass("beVisible");
     });
     //OTVARANJE I ZATVARANJE BRAND MENIJA
 
-    $("#menu-item-21375").on("click", function () {
+    $("#menu-item-22083").on("click", function () {
       zatvoriSveMegamenije();
       var subMenu1 = $(this).find(".sub-menu-1");
       subMenu1.addClass("beVisible");
       subMenu1.addClass("secondSubmenu");
     });
 
-    $("#menu-item-21725").mousedown(function () {
+    $("#menu-item-22158").mousedown(function () {
       $(".secondSubmenu").removeClass("beVisible");
     }); //OTVARANJE ZATVARANJE CONTENT MENIJA
 
-    $("#menu-item-21376").on("click", function () {
+    $("#menu-item-22159").on("click", function () {
       zatvoriSveMegamenije();
       var subMenu3 = $(this).find(".sub-menu-1");
       subMenu3.addClass("beVisible");
       subMenu3.addClass("thirdSubmenu");
     });
 
-    $("#menu-item-21724").mousedown(function () {
+    $("#menu-item-22234").mousedown(function () {
       $(".thirdSubmenu").removeClass("beVisible");
     }); //OTVARANJE ZATVARANJE DIGITAL MENIJA
 
-    $("#menu-item-21377").on("click", function () {
+    $("#menu-item-22235").on("click", function () {
       zatvoriSveMegamenije();
       var subMenu4 = $(this).find(".sub-menu-1");
       subMenu4.addClass("beVisible");
       subMenu4.addClass("fourthSubmenu");
     });
 
-    $("#menu-item-21722").mousedown(function () {
+    $("#menu-item-22310").mousedown(function () {
       $(".fourthSubmenu").removeClass("beVisible");
     }); //OTVARANJE ZATVARANJE TEAM MENIJA
 
@@ -84,6 +84,34 @@ class MegamenuDe {
       $(".thirdSubmenu").removeClass("beVisible");
       $(".fourthSubmenu").removeClass("beVisible");
     }); //GASENJE MEGAMENIJA NA SCROLL
+
+    /**LOGIKA ZA OTVARANJE I ZATVARANJE MOBILNOG MENIJA */
+    $(".hamburgerMenu").on("click", function () {
+      $("menu-custom_megamenu_mobile-de-container").removeClass(
+        "hiddenMobileMenuItems"
+      );
+      $(".menu-custom_megamenu_mobile-de-container").addClass(
+        "visibleMobileMenuItems"
+      );
+    });
+    $("#menu-item-22311").on("click", function () {
+      $(".menu-custom_megamenu_mobile-de-container").removeClass(
+        "visibleMobileMenuItems"
+      );
+      $(".menu-custom_megamenu_mobile-de-container").addClass(
+        "hiddenMobileMenuItems"
+      );
+    });
+
+    /**LOGIKA ZA OTVARANJE I ZATVARANJE PODMENIJA ZA TELEFON */
+    $(
+      ".menu-custom_megamenu_mobile-de-container .menu-item-has-children > a"
+    ).click(function (e) {
+      e.preventDefault();
+      var submenu = $(this).next(".mobile-sub-menu");
+      $(".mobile-sub-menu").not(submenu).slideUp("fast");
+      submenu.slideToggle("fast");
+    });
   }
 }
 
